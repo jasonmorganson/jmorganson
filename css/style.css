@@ -1,3 +1,7 @@
+
+
+/*** Fonts ***/
+
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
@@ -13,54 +17,98 @@
 
 }
 
-html{
+
+/*** Styles ***/
+
+html {
+
     /* This image will be displayed fullscreen */
     background:url('background.png') no-repeat center center;
-
-	/* Ensure the html element always takes up the full height of the browser window */
-	min-height:100%;
-
-	/* The Magic */
-	background-size:cover;
+    background-size: cover;
 }
 
-body{
-	/* Workaround for some mobile browsers */
-	min-height:100%;
+body {
+    
+    /* Workaround for some mobile browsers */
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
 }  
 
-body {
-    margin: 20px;
-}
 
-body {
-    font-family: 'Special Elite', serif;
-    font-size: 24px;
-}
+
+
+
 
 #card {
-    width: 100%;
     text-align: justify;
     text-justify: inter-word;    
+    font-size: 9vw;
 }
 
 
-h1, h2, h3 {
-    margin: 0;    
-}
-
-h1 { font: 54px/60px 'NeoRetroDrawRegular', Arial, sans-serif;letter-spacing: 0;}
-
-h2 {
-    margin-top: 10px;
-    font-size: 72px;
+#name {
+    font-family: 'NeoRetroDrawRegular', sans-serif;
 }
 
 
-h3 {
-    font-size: 58px;
+#email, #phone {
+    font-family: 'Special Elite', cursive, serif;
 }
+
+#email {
+    
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 a {
     font-family: 'PT Mono', sans-serif;
 }
+
+section.main {
+  position: relative;
+}
+
+section.coderwall {
+  position: absolute;
+  top: 0px;
+  left: 800px;
+}
+
+.twitter-bird {
+    
+left: 2px;
+margin-top: -5px;
+width: 16px;
+height: 13px;
+}
+
+.gtalk {
+    height: 14px;
+    width: 14px;
+    padding: 0 2px 0 0;
+    margin: 0;
+    border: none;
+    background-image: url( http://www.google.com/talk/service/resources/chaticon.gif );
+}        
+
+.gtalk-status {
+    height: 9px;
+    width: 9px;
+    padding: 0 2px 0 0;
+    margin: 0;
+    border: none;
+    background-image: url( http://www.google.com/talk/service/badge/Show?tk=z01q6amlqb1kf3b916soukop5pqefbd4n71s1v1r73340k3k0uvuuspicc2qe6a075u5ub5cal44s3iale3p5f390ff5o4a8n304okgq8bvd5gt6mhrdbufcotndnv1jt0g1k7kiv9t10obova4h1gjc9orkupgpjnq11un3b&amp;w=9&amp;h=9 );
+    
+            
