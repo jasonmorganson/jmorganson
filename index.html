@@ -41,6 +41,7 @@
         
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/diagnostic.css">
         <link rel="stylesheet" href="style.css">
         <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
         
@@ -58,15 +59,36 @@
 
     <body>
 
-        <div id="card">
-            <div id="name">Jason Morganson</div>
-            <div id="email">jason@morganson.me</div>
-            <div id="phone">1-518-302-4299</div>
+        <div id="hcard-Jason-Morganson" class="vcard">
+
+            <div id="name" class="fn red">Jason Morganson</div>
+            <div id="email" class="email">jason@morganson.me</div>
+            <div id="phone" class="tel">1-518-302-4299</div>
+
+            <div class="adr hidden-text">
+                <div class="street-address">16 Stage Coach Way</div>
+                <span class="locality">Lake Placid</span>
+                , 
+                <span class="region">New York</span>
+                , 
+                <span class="postal-code">12946</span>
+                
+                <span class="country-name">US</span>
+                
+            </div>
+            
+            <div class="hidden-text">
+                <a rel="me" class="url" href="http://jason.morganson.me/">my site</a>
+                <a class="url" href="aim:goim?screenname=jmorganson">AIM</a>
+                <a class="url" href="ymsgr:sendIM?jasonmorganson">YIM</a>
+                <a class="url" href="xmpp:jason@morganson.me">Jabber</a>
+            </div>
+            
+            <div class="footer"><a title="hCard" href="http://microformats.org/wiki/hcard">hCard</a> embedded.
+            <a title="vCard" type="text/directory" href="http://h2vx.com/vcf/jason.morganson.me">Download vCard</a>
+            </div>
+
         </div>
    
-        <script>
-            
-        </script>
-        
     </body>
 </html>
