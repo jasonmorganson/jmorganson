@@ -1,0 +1,8 @@
+{
+    "links" : [{
+
+        "rel" : "lrdd",
+        "type" : "application/json",
+        "template" : "http://jason.morganson.me/profiles/{uri}.json"
+    }]
+}
