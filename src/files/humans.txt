@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Jason Morganson>
 
 # THANKS
 
-    <name>
+    <Mom>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    Modernizr
+    Node.js, Express
