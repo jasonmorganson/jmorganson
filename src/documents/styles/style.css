@@ -100,14 +100,14 @@ overflow: hidden;
 }
 
 
-.terminal {
+.find body {
 
     font-family:'Source Code Pro', Courier, sans-serif;
     color: #CCCCCC;
     background: #000000;
 }
 
-.terminal div {
+.find div {
 
     padding-top: 1em;
     padding-bottom: 1em;
