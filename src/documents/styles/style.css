@@ -37,6 +37,8 @@ body:before {
         z-index: 100;
 }
 
+.wf-loading {
+display:none;
 }
 
 .hidden-text {
