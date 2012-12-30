@@ -3,7 +3,7 @@ include google
 
 
 // DocPad Scripts + Our Own
-!= getBlock('scripts').add(['/vendor/modernizr.js', "/scripts/script.js"]).toHTML()
+!= getBlock('scripts').add(['/vendor/modernizr.js', '/vendor/analytics.js', '/scripts/script.js']).toHTML()
 
 script(src="build.js")
 script(src="/vendor/ready.js")
@@ -17,4 +17,9 @@ script
         var $ = require('component-jquery');
 
         $(document).bind('touchmove', false);
+
+        analytics.initialize({
+            'Google Analytics' : 'UA-36636260-1'
+        });
+
     })
