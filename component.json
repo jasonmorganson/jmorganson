@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "matthewmueller/typewriter": "*",
+    "necolas/normalize.css": "*",
+    "component/jquery": "*",
+    "brunch/console-polyfill": "*"
+  }
+}
