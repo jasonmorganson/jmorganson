@@ -2,9 +2,18 @@
 include jquery
 include google
 
-script $(document).bind('touchmove', false);
 
 // DocPad Scripts + Our Own
 != getBlock('scripts').add(['/vendor/log.js', '/vendor/modernizr.js', "/scripts/script.js"]).toHTML()
 
 script(src="build.js")
+script(src="/vendor/ready.min.js")
+
+script
+
+    domready(function () {
+
+        var $ = require('component-jquery');
+
+        $(document).bind('touchmove', false);
+    })
