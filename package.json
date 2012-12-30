@@ -39,7 +39,8 @@
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-text": "2.x",
     "docpad-plugin-jade": "~2.0.2",
-    "docpad-plugin-markdown": "~2.0.3"
+    "docpad-plugin-markdown": "~2.0.3",
+    "docpad-plugin-livereload": "~2.1.2"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
