@@ -33,14 +33,12 @@
   "dependencies": {
     "docpad": "6.x",
     "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-marked": "~2.1.0",
+    "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-text": "2.x",
-    "docpad-plugin-jade": "~2.0.2",
-    "docpad-plugin-markdown": "~2.0.3",
-    "docpad-plugin-livereload": "~2.1.2"
+    "docpad-plugin-jade": "2.x",
+    "docpad-plugin-livereload": "2.x"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
