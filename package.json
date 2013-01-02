@@ -43,5 +43,9 @@
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
   },
-  "main": "node_modules/docpad/bin/docpad-server"
+  "main": "node_modules/docpad/bin/docpad-server",
+  "subdomain": "jmorganson.jmorganson",
+  "scripts": {
+    "start": "node_modules/docpad/bin/docpad-server"
+  }
 }
