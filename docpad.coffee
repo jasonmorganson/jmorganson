@@ -90,7 +90,6 @@ docpadConfig = {
                 else
                     next()
 
-            console.log latestConfig
 
     # =================================
     # Environments
