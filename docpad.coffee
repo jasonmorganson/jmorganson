@@ -36,6 +36,10 @@ docpadConfig = {
                 place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
                 """
 
+            services:
+                googleAnalytics: 'UA-36636260-1'
+
+
         # -----------------------------
         # Helper Functions
 
@@ -90,13 +94,17 @@ docpadConfig = {
                 else
                     next()
 
-
     # =================================
     # Environments
 
     environments:
 
         development:
+
+            templateData:
+                site:
+                    services:
+                        googleAnalytics: false
 
             events:
                 populateCollections: ->

@@ -39,7 +39,8 @@
     "docpad-plugin-text": "2.x",
     "docpad-plugin-jade": "2.x",
     "docpad-plugin-livereload": "2.x",
-    "docpad-plugin-cleanurls": "~2.2.5"
+    "docpad-plugin-cleanurls": "~2.2.5",
+    "docpad-plugin-services": "~2.0.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
