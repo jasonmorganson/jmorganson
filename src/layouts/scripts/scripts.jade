@@ -1,26 +1,20 @@
 
 include google
 
-
-// DocPad Scripts + Our Own
-
 != getBlock('scripts').toHTML()
 
 script(src="build.js")
-script(src="/vendor/ready.js")
-
 script
 
     require('brunch-console-polyfill');
 
+    var $ = require('component-jquery');
+
+script(src="/vendor/ready.js")
+script
+
     domready(function () {
 
-        var $ = require('component-jquery');
-
         $(document).bind('touchmove', false);
-
-        analytics.initialize({
-            'Google Analytics' : 'UA-36636260-1'
-        });
 
     })
