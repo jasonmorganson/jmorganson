@@ -1,3 +1,4 @@
+.be/id-cache
 out/*
 node_modules/*
 components/*
