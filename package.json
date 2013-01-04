@@ -47,6 +47,7 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "subdomain": "jmorganson",
+  "domains": ["jason.morganson.me"],
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
   }
