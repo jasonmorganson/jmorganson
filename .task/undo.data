@@ -1,0 +1,14 @@
+time 1357345323
+new [description:"Add structured data to markup" entry:"1357345323" status:"pending" uuid:"4d272888-8cc7-4c32-9dc7-692eab19cbc1"]
+---
+time 1357345597
+new [description:"Fine tune styling" entry:"1357345597" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+---
+time 1357345718
+old [description:"Add structured data to markup" entry:"1357345323" status:"pending" uuid:"4d272888-8cc7-4c32-9dc7-692eab19cbc1"]
+new [description:"Add structured data to markup" entry:"1357345323" project:"Website" status:"pending" uuid:"4d272888-8cc7-4c32-9dc7-692eab19cbc1"]
+---
+time 1357345718
+old [description:"Fine tune styling" entry:"1357345597" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+new [description:"Fine tune styling" entry:"1357345597" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+---
