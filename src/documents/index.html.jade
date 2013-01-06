@@ -6,38 +6,36 @@ title: 'Jason Morganson'
 
 #hcard-Jason-Morganson.vcard(
     vocab="http://schema.org/", typeof="Person",
-    itemscope="", itemtype="http://schema.org/Person",
-    xmlns:v="http://rdf.data-vocabulary.org/#", typeof="v:Person")
+    itemtype="http://schema.org/Person", itemscope="")
 
     // Name
-    #name.fn(property="name", property="v:name", itemprop="name") Jason Morganson
+    #name.fn(property="name", itemprop="name") Jason Morganson
 
     // E-mail
-    #email.email(itemprop="email", property="v:email", property="email") jason@morganson.me
+    #email.email(property="email", itemprop="email") jason@morganson.me
 
+    // Home phone
+    #home.tel
+        .type Home
+        .value(property="telephone", itemprop="telephone") 1.888.891.6774
 
-    #numbers
+    // Cellphone
+    #cell.tel
+        .type Cell
+        .value(property="telephone", itemprop="telephone") 1-518-302-4299
 
-        h1.tel
-            span.type Home
-            span.pref
-                span.value(property="telephone", property="v:telephone", itemprop="telephone")  1.888.891.6774
+    // Fax
+    #fax.tel
+        .type Fax
+        .value(property="faxNumber", itemprop="faxNumber") 1-518-310-2272
 
-        h1.tel
-            span.type Cell
-            span.value(itemprop="telephone") 1-518-302-4299
-
-        h1.tel
-            span.type Fax
-            span.value(itemprop="faxNumber") 1-518-310-2272
-
-    #address
-        .adr(itemprop="address", itemscope="", itemtype="http://schema.org/PostalAddress")
-            .street-address(itemprop="streetAddress") 16 Stage Coach Way
-            .locality(itemprop="addressLocality") Lake Placid
-            .region(itemprop="addressRegion") New York
-            .postal-code(itemprop="postalCode") 12946
-            .country-name(itemprop="addressCountry") US
+    // Address
+    #address.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
+            .street-address(property="streetAddress", itemprop="streetAddress") 16 Stage Coach Way
+            .locality(property="addressLocality", itemprop="addressLocality") Lake Placid
+            .region(property="addressRegion", itemprop="addressRegion") New York
+            .postal-code(property="postalCode", itemprop="postalCode") 12946
+            .country-name(property="addressCountry", itemprop="addressCountry") US
 
 //        div
             a.url(rel="me", href="http://jason.morganson.me/") my site
