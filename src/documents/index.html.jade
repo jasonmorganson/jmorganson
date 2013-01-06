@@ -4,28 +4,50 @@ title: 'Jason Morganson'
 ---
 
 
-#hcard-Jason-Morganson.vcard
+#hcard-Jason-Morganson.vcard(
+    vocab="http://schema.org/", typeof="Person",
+    itemscope="", itemtype="http://schema.org/Person",
+    xmlns:v="http://rdf.data-vocabulary.org/#", typeof="v:Person")
 
-    #name.fn Jason Morganson
-    #email.email jason@morganson.me
-    #phone.tel 1-518-302-4299
+    // Name
+    #name.fn(property="name", property="v:name", itemprop="name") Jason Morganson
 
-    .hidden-text
-        .adr
-            span.street-address 16 Stage Coach Way
-            span.locality Lake Placid
-            span.region New York
-            span.postal-code 12946
-            span.country-name US
+    // E-mail
+    #email.email(itemprop="email", property="v:email", property="email") jason@morganson.me
 
-        div
+
+    #numbers
+
+        h1.tel
+            span.type Home
+            span.pref
+                span.value(property="telephone", property="v:telephone", itemprop="telephone")  1.888.891.6774
+
+        h1.tel
+            span.type Cell
+            span.value(itemprop="telephone") 1-518-302-4299
+
+        h1.tel
+            span.type Fax
+            span.value(itemprop="faxNumber") 1-518-310-2272
+
+    #address
+        .adr(itemprop="address", itemscope="", itemtype="http://schema.org/PostalAddress")
+            .street-address(itemprop="streetAddress") 16 Stage Coach Way
+            .locality(itemprop="addressLocality") Lake Placid
+            .region(itemprop="addressRegion") New York
+            .postal-code(itemprop="postalCode") 12946
+            .country-name(itemprop="addressCountry") US
+
+//        div
             a.url(rel="me", href="http://jason.morganson.me/") my site
             a.url(href="aim:goim?screenname=jmorganson") AIM
             a.url(href="ymsgr:sendIM?jasonmorganson") YIM
             a.url(href="xmpp:jason@morganson.me") Jabber
 
-.footer
-    a(title="hCard", href="http://microformats.org/wiki/hcard") hCard embedded.
+//.footer
+    a(title="hCard", href="http://microformats.org/wiki/hcard") hCard embedded
+    a(rel="profile", href="http://microformats.org/profile/hcard") hCard
     a(title="vCard", type="text/directory", href="http://h2vx.com/vcf/jason.morganson.me") Download vCard
     a(title="Portable Contact (JSON)", type="text/javascript", href="http://www.plaxo.com/pdata/vcard?vcardUrl=http%3A%2F%2Fh2vx.com%2Fvcf%2Fjason.morganson.me&format=json&plaintext=1&pretty=1") Portable Contact (JSON)
     a(title="Portable Contact (XML)", type="text/xml", href="http://www.plaxo.com/pdata/vcard?vcardUrl=http%3A%2F%2Fh2vx.com%2Fvcf%2Fjason.morganson.me&format=json&plaintext=1&pretty=1") Portable Contact (XML)
