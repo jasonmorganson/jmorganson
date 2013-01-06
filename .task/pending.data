@@ -5,3 +5,4 @@
 [description:"Add microdata markup" entry:"1357424685" project:"Website" status:"pending" uuid:"07fc6f15-e5ba-41c8-be98-b60c3f6d6282"]
 [description:"Add schema.org markup" entry:"1357424700" project:"Website" status:"pending" uuid:"881547fb-4314-42de-9e57-065c947a9754"]
 [description:"Add RDFa markup" entry:"1357424721" project:"Website" status:"pending" uuid:"01f2e949-87a9-44d5-854f-5529141c324f"]
+[depends:"5ab8da45-c4c4-4ca1-a6ec-c4daaedd78b7" description:"Submit to Bing" entry:"1357427872" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]

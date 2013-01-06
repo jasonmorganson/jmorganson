@@ -51,3 +51,10 @@ time 1357424776
 old [description:"Add structured data to markup" entry:"1357345323" project:"Website" status:"pending" uuid:"4d272888-8cc7-4c32-9dc7-692eab19cbc1"]
 new [depends:"77944408-8c05-4418-bee0-c6371e6a1afd,07fc6f15-e5ba-41c8-be98-b60c3f6d6282,881547fb-4314-42de-9e57-065c947a9754,01f2e949-87a9-44d5-854f-5529141c324f" description:"Add structured data to markup" entry:"1357345323" project:"Website" status:"pending" uuid:"4d272888-8cc7-4c32-9dc7-692eab19cbc1"]
 ---
+time 1357427872
+new [description:"Submit to Bing" entry:"1357427872" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]
+---
+time 1357485009
+old [description:"Submit to Bing" entry:"1357427872" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]
+new [depends:"5ab8da45-c4c4-4ca1-a6ec-c4daaedd78b7" description:"Submit to Bing" entry:"1357427872" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]
+---
