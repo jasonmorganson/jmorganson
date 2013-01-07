@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'Stroke Dimension';
+    src: url('/fonts/StrokeDimension.ttf');
+    src: url('/fonts/StrokeDimension.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

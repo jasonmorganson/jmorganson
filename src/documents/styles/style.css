@@ -40,12 +40,22 @@ body {
 }
 
 
+.body {
+    font-size: 5vw;
+}
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 .wf-loading {
 /*display:none;*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .hidden-text {
@@ -62,11 +72,16 @@ overflow: hidden;
     background: #ffb7b7; /* Safari */
 	}
 
-#email::selection {
+.email {
+    color: black;
+    text-decoration: none;
+}
+
+.email::selection {
     color: blue;
 }
 
-.vcard {
+#name, .email {
     text-align: justify;
     text-justify: inter-word;    
     font-size: 9vw;
@@ -78,6 +93,9 @@ overflow: hidden;
   */
 }
 
+.email {
+    font-size: 13vw;
+}
 
 .vcard .footer {
     font-size: 0.9vw;
@@ -87,17 +105,17 @@ overflow: hidden;
     font-family: 'NeoRetroDrawRegular', sans-serif;
 }
 
+.email {
+    font-family: 'Stroke Dimension', cursive, serif;
+}
 
-#email, #phone {
+.u-impp,
+.tel {
     font-family: 'Special Elite', cursive, serif;
 }
 
-#email {
 
-    font-weight: bold;
-}
-
-#name, #phone {
+#name, .tel {
     white-space: nowrap;
 }
 
