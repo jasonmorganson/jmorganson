@@ -4,44 +4,80 @@ title: 'Jason Morganson'
 ---
 
 
-#hcard-Jason-Morganson.vcard(
-    vocab="http://schema.org/", typeof="Person",
-    itemtype="http://schema.org/Person", itemscope="")
+.vcard.h-card(profile="http://microformats.org/wiki/hcard", vocab="http://schema.org/", typeof="Person", itemtype="http://schema.org/Person", itemscope="")
 
     // Name
-    #name.fn(property="name", itemprop="name") Jason Morganson
+    #name.p-fn.fn.p-name(property="name", itemprop="name") Jason Morganson
 
     // E-mail
-    #email.email(property="email", itemprop="email") jason@morganson.me
+    a#email.u-email.email(title="E-Mail", property="email", itemprop="email", href="mailto:jason@morganson.me") jason@morganson.me
+
+    // IM
+    #IM
+
+        //iMessage
+        a#iMessage.u-url.url.u-impp(title="iMessage", href="://jason@morganson.me") iMessage
+
+        //Facetime
+        a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime://jason@morganson.me") FaceTime
+
+        //SIP
+        a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
+
+        //SIMPLE
+        a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
+
+        //XMPP
+        a#XMPP.u-url.url.u-impp(title="XMPP", href="xmpp:jason@morganson.me") XMPP
+
+        //GTalk
+        a#GTalk.u-url.url.u-impp(title="GTalk", href="gtalk:chat?jid=jason@morganson.me") GTalk
+
+        //MSN
+        a#MSN.u-url.url.u-impp(title="MSN", href="msnim:chat?contact=jason@morganson.me") MSN
+
+        //AIM
+        a#AIM.u-url.url.u-impp(title="AIM", href="aim:goim?screenname=jason@morganson.me") AIM
+
+        //YIM
+        a#YIM.u-url.url.u-impp(title="YIM", href="ymsgr:sendIM?jasonmorganson") YIM
+
+        //Skype
+        a#Skype.u-url.url.u-impp(title="Skype", href="skype:jasonmorganson?call") Skype
 
     // Home phone
-    #home.tel
+    #phone.p-tel.tel
         .type Home
-        .value(property="telephone", itemprop="telephone") 1.888.891.6774
+        a.value(title="Home", property="telephone", itemprop="telephone", href="tel:+18888916774") 1.888.891.6774
 
     // Cellphone
-    #cell.tel
+    #cell.p-tel.tel
         .type Cell
-        .value(property="telephone", itemprop="telephone") 1-518-302-4299
+        a.value(title="Cell", property="telephone", itemprop="telephone", href="tel:+15183024299") 1-518-302-4299
+
+    // SMS
+    #sms.p-tel.tel
+        .type Cell
+        a.value.u-url.url(title="SMS", href="sms:15183024299") SMS
 
     // Fax
-    #fax.tel
+    #fax.p-tel.tel
         .type Fax
         .value(property="faxNumber", itemprop="faxNumber") 1-518-310-2272
 
     // Address
-    #address.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
-            .street-address(property="streetAddress", itemprop="streetAddress") 16 Stage Coach Way
-            .locality(property="addressLocality", itemprop="addressLocality") Lake Placid
-            .region(property="addressRegion", itemprop="addressRegion") New York
-            .postal-code(property="postalCode", itemprop="postalCode") 12946
-            .country-name(property="addressCountry", itemprop="addressCountry") US
+    #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
+        .p-street-address.street-address(property="streetAddress", itemprop="streetAddress") 16 Stage Coach Way
+        .p-locality.locality(property="addressLocality", itemprop="addressLocality") Lake Placid
+        .p-region.region(property="addressRegion", itemprop="addressRegion") New York
+        .p-postal-code.postal-code(property="postalCode", itemprop="postalCode") 12946
+        .p-country-name.country-name(property="addressCountry", itemprop="addressCountry") US
+        a.h-geo.p-geo.geo(title="Geo", href="geo:44.2679,-73.9897")
+            abbr.p-latitude.latitude(title="44.26790") N 44° 26.790
+            abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
 
-//        div
-            a.url(rel="me", href="http://jason.morganson.me/") my site
-            a.url(href="aim:goim?screenname=jmorganson") AIM
-            a.url(href="ymsgr:sendIM?jasonmorganson") YIM
-            a.url(href="xmpp:jason@morganson.me") Jabber
+    // Jobs
+    .role Software Engineer
 
 //.footer
     a(title="hCard", href="http://microformats.org/wiki/hcard") hCard embedded
