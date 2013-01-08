@@ -109,3 +109,35 @@ new [description:"Add RDFa markup" end:"1357524922" entry:"1357424721" project:"
 time 1357529835
 new [description:"Setup authorship with Google" entry:"1357529835" project:"Website" status:"pending" uuid:"616eff23-2539-420f-a126-46e59a1376c9"]
 ---
+time 1357613293
+new [description:"Add bottom page curls" entry:"1357613293" status:"pending" uuid:"e8d09370-7cc4-4656-b903-8c8519568a22"]
+---
+time 1357613328
+old [description:"Fine tune styling" entry:"1357345597" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+new [depends:"e8d09370-7cc4-4656-b903-8c8519568a22" description:"Fine tune styling" entry:"1357345597" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+---
+time 1357625529
+new [description:"Get Google to change site picture, or fix styling to make it better" entry:"1357625529" status:"pending" uuid:"f3abfcff-defb-46b6-b095-aca6f036ef62"]
+---
+time 1357625547
+old [depends:"e8d09370-7cc4-4656-b903-8c8519568a22" description:"Fine tune styling" entry:"1357345597" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+new [depends:"e8d09370-7cc4-4656-b903-8c8519568a22,f3abfcff-defb-46b6-b095-aca6f036ef62" description:"Fine tune styling" entry:"1357345597" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+---
+time 1357626327
+new [description:"Work out some sort of full screen grab" entry:"1357626327" status:"pending" uuid:"594f45d7-b71f-4dd1-a51f-938843be63bb"]
+---
+time 1357626347
+old [description:"Work out some sort of full screen grab" entry:"1357626327" status:"pending" uuid:"594f45d7-b71f-4dd1-a51f-938843be63bb"]
+new [description:"Work out some sort of full screen grab" entry:"1357626327" project:"Website" status:"pending" uuid:"594f45d7-b71f-4dd1-a51f-938843be63bb"]
+---
+time 1357626385
+old [description:"Add bottom page curls" entry:"1357613293" status:"pending" uuid:"e8d09370-7cc4-4656-b903-8c8519568a22"]
+new [description:"Add bottom page curls" entry:"1357613293" project:"Website" status:"pending" uuid:"e8d09370-7cc4-4656-b903-8c8519568a22"]
+---
+time 1357626385
+old [description:"Get Google to change site picture, or fix styling to make it better" entry:"1357625529" status:"pending" uuid:"f3abfcff-defb-46b6-b095-aca6f036ef62"]
+new [description:"Get Google to change site picture, or fix styling to make it better" entry:"1357625529" project:"Website" status:"pending" uuid:"f3abfcff-defb-46b6-b095-aca6f036ef62"]
+---
+time 1357627045
+new [description:"Implement webfinger" entry:"1357627045" project:"Website" status:"pending" uuid:"7cc287d8-dbe7-4fa6-87af-c560cc254b05"]
+---
