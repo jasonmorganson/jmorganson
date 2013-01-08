@@ -141,3 +141,18 @@ new [description:"Get Google to change site picture, or fix styling to make it b
 time 1357627045
 new [description:"Implement webfinger" entry:"1357627045" project:"Website" status:"pending" uuid:"7cc287d8-dbe7-4fa6-87af-c560cc254b05"]
 ---
+time 1357630583
+new [description:"Add data wto webfinger profile" entry:"1357630583" status:"pending" uuid:"443dc92e-7bf6-40a4-8012-17743e3290dc"]
+---
+time 1357630601
+old [description:"Implement webfinger" entry:"1357627045" project:"Website" status:"pending" uuid:"7cc287d8-dbe7-4fa6-87af-c560cc254b05"]
+new [depends:"443dc92e-7bf6-40a4-8012-17743e3290dc" description:"Implement webfinger" entry:"1357627045" project:"Website" status:"pending" uuid:"7cc287d8-dbe7-4fa6-87af-c560cc254b05"]
+---
+time 1357630703
+old [depends:"5ab8da45-c4c4-4ca1-a6ec-c4daaedd78b7,4d272888-8cc7-4c32-9dc7-692eab19cbc1" description:"Submit to Bing" entry:"1357427872" project:"Website" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]
+new [depends:"5ab8da45-c4c4-4ca1-a6ec-c4daaedd78b7,4d272888-8cc7-4c32-9dc7-692eab19cbc1,7cc287d8-dbe7-4fa6-87af-c560cc254b05" description:"Submit to Bing" entry:"1357427872" project:"Website" status:"pending" uuid:"9e89a48d-ae60-4cab-9aa0-36e1c4df526c"]
+---
+time 1357630774
+old [description:"Get Google to change site picture, or fix styling to make it better" entry:"1357625529" project:"Website" status:"pending" uuid:"f3abfcff-defb-46b6-b095-aca6f036ef62"]
+new [description:"Get Google to change site picture, or fix styling to make it better" entry:"1357625529" priority:"L" project:"Website" status:"pending" uuid:"f3abfcff-defb-46b6-b095-aca6f036ef62"]
+---
