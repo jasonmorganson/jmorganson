@@ -3,6 +3,15 @@
 
     <hm:Host>jason.morganson.me</hm:Host>
 
+    <Link rel='author' href='http://jason.morganson.me'>
+        <Title>Jason Morganson</Title>
+    </Link>
+
+    <Link rel='author' href='mailto:jason@morganson.me'>
+        <Title>Jason Morganson</Title>
+    </Link>
+
+
     <Link rel="lrdd" template="http://jason.morganson.me/profiles/{uri}">
         <Title>Resource Descriptor</Title>
     </Link>
