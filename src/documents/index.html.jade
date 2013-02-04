@@ -8,24 +8,20 @@ priority: 1.0
 
 span(about="http://jason.morganson.me",
      rdf:about="http://jason.morganson.me",
-     version="HTML+RDFa 1.1",
      property="foaf:PersonalProfileDocument",
-     typeof="PersonalProfileDocument foaf:PersonalProfileDocument",
-     prefix="foaf: http://xmlns.com/foaf/0.1/ rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     typeof="foaf:PersonalProfileDocument"
     )
 
     span(property="maker", rdf:resource="http://jason.morganson.me/#me")
     span(property="primaryTopic", rdf:resource="http://jason.morganson.me/#me")
 
 .vcard.h-card(profile="http://microformats.org/wiki/hcard",
-              version="HTML+RDFa 1.1",
+              vocab="http://schema.org/",
               about="http://jason.morganson.me/#me",
               rdf:about="http://jason.morganson.me/#me",
-              vocab="http://schema.org/",
-              typeof="Person maker primaryTopic foaf:Person foaf:maker foaf:primaryTopic",
+              typeof="Person foaf:Person",
               itemtype="http://schema.org/Person",
-              itemscope="",
-              prefix="cert: http://www.w3.org/ns/auth/cert# foaf: http://xmlns.com/foaf/0.1/ rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema#",
+              itemscope=""
              )
 
     // Certificate
@@ -35,16 +31,13 @@ span(about="http://jason.morganson.me",
             span(property="cert:exponent", rdf:datatype="http://www.w3.org/2001/XMLSchema#int") 65537
 
     // Web Page
-    #webpage.u-url.url(itemprop="url", property="url foaf:homepage", rdf:resource="http://jason.morganson.me")
-
-    // Blog
-    #blog.u-url.url(itemprop="url", property="url foaf:blog", rdf:resource="http://jason.morganson.me/blog")
+    #webpage.u-url.url(itemprop="url", property="url og:url og:website foaf:homepage", rdf:resource="http://jason.morganson.me")
 
     // Name
-    #name.p-fn.fn.p-name(itemprop="name", property="name foaf:name")
-        span#givenName.p-given-name.given-name(itemprop="givenName", property="foaf:firstName") Jason
+    #name.p-fn.fn.p-name(itemprop="name", property="name foaf:name", prefix="http://ogp.me/ns/profile#")
+        span#givenName.p-given-name.given-name(itemprop="givenName", property="profile:first_name foaf:firstName") Jason
         span 
-        span#familyName.p-family-name.family-name(itemprop="familyName", property="foaf:surname") Morganson
+        span#familyName.p-family-name.family-name(itemprop="familyName", property="profile:last_name foaf:surname") Morganson
 
     // E-mail
     a#email.u-email.email(title="E-Mail", property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", href="mailto:jason@morganson.me") jason@morganson.me
@@ -129,7 +122,7 @@ span(about="http://jason.morganson.me",
             abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
 
     // Jobs
-    .role(property="jobTitle foaf:title", itemprop="jobTitle") Software Engineer
+    .role(property="jobTitle og:title foaf:title", itemprop="jobTitle") Software Engineer
 
     // Companies
     .org(property="memberOf owns worksFor foaf:Organization") 14 Productions
