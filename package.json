@@ -1,6 +1,6 @@
 {
   "name": "jmorganson",
-  "version": "0.0.1-3",
+  "version": "0.0.1-4",
   "private": true,
   "description": "HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices.",
   "homepage": "https://github.com/docpad/html5-boilerplate.docpad",
@@ -47,7 +47,9 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "subdomain": "jmorganson",
-  "domains": ["jason.morganson.me"],
+  "domains": [
+    "jason.morganson.me"
+  ],
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
   }
