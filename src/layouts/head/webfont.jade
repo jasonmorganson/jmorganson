@@ -9,7 +9,12 @@ script
 
         custom: { families: [ 'NeoRetroDrawRegular', 'Stroke Dimension' ],
                   urls: [ 'http://dev.morganson.net/styles/neoretrodraw.css',
-                          'http://dev.morganson.net/styles/strokedimension.css' ] }
+                      'http://dev.morganson.net/styles/strokedimension.css' ] },
+
+        active: function() {
+
+            $("body").show();
+        }
     };
 
             (function() {
