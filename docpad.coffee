@@ -101,6 +101,8 @@ docpadConfig = {
 
         development:
 
+            port: 8080
+
             templateData:
                 site:
                     services:
