@@ -3,6 +3,7 @@
     "matthewmueller/typewriter": "*",
     "necolas/normalize.css": "*",
     "component/jquery": "*",
-    "brunch/console-polyfill": "*"
+    "brunch/console-polyfill": "*",
+    "jb55/domready": "*"
   }
 }

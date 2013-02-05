@@ -10,9 +10,8 @@ script
 
     var $ = require('component-jquery');
 
-script(src="/vendor/ready.js")
-script
 
+    var domready = require('jb55-domready')
     domready(function () {
 
         $(document).bind('touchmove', false);
