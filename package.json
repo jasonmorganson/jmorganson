@@ -1,30 +1,20 @@
 {
   "name": "jmorganson",
   "version": "0.0.1-4",
-  "private": true,
-  "description": "HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices.",
-  "homepage": "https://github.com/docpad/html5-boilerplate.docpad",
+  "description": "Jason Morganson",
   "keywords": [
-    "docpad-skeleton",
-    "docpad",
-    "website",
-    "skeleton",
-    "html5 boilerplate",
-    "h5bp"
+    "Jason",
+    "Morganson"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-  "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+  "author": "Jason Morganson <jason@morganosn.me> (http://jason.morganson.me)",
+  "homepage": "http://jason.morganson.me",
+  "subdomain": "jmorganson",
+  "domains": [
+    "jason.morganson.me"
   ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
-  ],
-  "bugs": {
-    "url": "https://github.com/docpad/html5-boilerplate.docpad/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "http://github.com/docpad/html5-boilerplate.docpad.git"
+    "url": "http://github.com/jmorganson/jmorganson.git"
   },
   "engines": {
     "node": "0.8.x",
@@ -35,10 +25,10 @@
     "docpad-plugin-coffeescript": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
+    "docpad-plugin-sitemap": "0.2.x",
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-text": "2.x",
     "docpad-plugin-jade": "2.x",
-    "docpad-plugin-livereload": "2.x",
     "docpad-plugin-cleanurls": "~2.2.5",
     "docpad-plugin-services": "~2.0.0"
   },
@@ -46,10 +36,6 @@
     "docpad-plugin-livereload": "2.x"
   },
   "main": "node_modules/docpad/bin/docpad-server",
-  "subdomain": "jmorganson",
-  "domains": [
-    "jason.morganson.me"
-  ],
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
   }
