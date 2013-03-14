@@ -20,27 +20,27 @@ priority: 1.0
     property="Person foaf:Person",
     about="http://jason.morganson.me",
     rdf:about="http://jason.morganson.me",
-    itemtype="http://schema.org/Person",
+    itemtype="http://schema.org/Person", itemscope="",
     profile="http://microformats.org/wiki/hcard"
     )
 
     // Certificate
-    span.cert(rel="cert:key", property="cert:key", itemprop="cert:key")
-        span(typeof="cert:RSAPublicKey", property="cert:RSAPublicKey", itemprop="cert:key", itemtype="cert:RSAPublicKey")
-            span(property="cert:modulus", itemprop="cert:modulus", datatype="xsd:hexBinary", rdf:datatype="xsd:hexBinary") 8C8B05E6AF8C175FC0AFE56AD7BF763E819FD92881AE22283698A5890B49D95EB91F13CAA1159EA568839534F949A8EF477B9A8E4ECF0067F1B7FCD0F2061F5B3FCE73BB309DD127A019C39B9586B5D19BDCF0293314ACFA5DF514CD010593F1A5C18CE3E9B761DD8FB2F7E02DCACF1A6CC36CE61EBFEC4474E06E954D2A5F031C3BE0A230257710146AA841D85FE4095471FF9C801BEA740970F39D88CCABFED34982EA747134FB0E601C5AF87BD5E5BD4B9FD70569B28698C83B496555D78B2BBE2F752CA4E21173EF823F2DD1530A483A873AF26903475F6C466178F06ADB3874379B5E02316AFEBB890A463856244D282AF7AC999C357BA6DC9EE8027961
-            span(property="cert:exponent", itemprop="cert:exponent", datatype="xsd:int", rdf:datatype="xsd:int") 65537
+    span.cert(rel="cert:key", property="cert:key", itemprop="cert:key", itemscope="")
+        span(typeof="cert:RSAPublicKey", property="cert:RSAPublicKey", itemprop="cert:key", itemscope="", itemtype="cert:RSAPublicKey")
+            span(property="cert:modulus", itemprop="cert:modulus", itemscope="", datatype="xsd:hexBinary", rdf:datatype="xsd:hexBinary") 8C8B05E6AF8C175FC0AFE56AD7BF763E819FD92881AE22283698A5890B49D95EB91F13CAA1159EA568839534F949A8EF477B9A8E4ECF0067F1B7FCD0F2061F5B3FCE73BB309DD127A019C39B9586B5D19BDCF0293314ACFA5DF514CD010593F1A5C18CE3E9B761DD8FB2F7E02DCACF1A6CC36CE61EBFEC4474E06E954D2A5F031C3BE0A230257710146AA841D85FE4095471FF9C801BEA740970F39D88CCABFED34982EA747134FB0E601C5AF87BD5E5BD4B9FD70569B28698C83B496555D78B2BBE2F752CA4E21173EF823F2DD1530A483A873AF26903475F6C466178F06ADB3874379B5E02316AFEBB890A463856244D282AF7AC999C357BA6DC9EE8027961
+            span(property="cert:exponent", itemprop="cert:exponent", itemscope="", datatype="xsd:int", rdf:datatype="xsd:int") 65537
 
     // Web Page
-    #webpage.u-url.url(itemprop="url", property="url og:url og:website foaf:homepage", rdf:resource="http://jason.morganson.me")
+    #webpage.u-url.url(itemprop="url", itemscope="", property="url og:url og:website foaf:homepage", rdf:resource="http://jason.morganson.me")
 
     // Name
-    #name.p-fn.fn.p-name(itemprop="name", property="name foaf:name", prefix="http://ogp.me/ns/profile#")
-        span#givenName.p-given-name.given-name(itemprop="givenName", property="profile:first_name foaf:firstName") Jason
+    #name.p-fn.fn.p-name(itemprop="name", itemscope="", property="name foaf:name", prefix="http://ogp.me/ns/profile#")
+        span#givenName.p-given-name.given-name(itemprop="givenName", itemscope="", property="profile:first_name foaf:firstName") Jason
         span 
-        span#familyName.p-family-name.family-name(itemprop="familyName", property="profile:last_name foaf:surname") Morganson
+        span#familyName.p-family-name.family-name(itemprop="familyName", itemscope="", property="profile:last_name foaf:surname") Morganson
 
     // E-mail
-    a#email.u-email.email(title="E-Mail", property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", href="mailto:jason@morganson.me") jason@morganson.me
+    a#email.u-email.email(title="E-Mail", property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", itemscope="", href="mailto:jason@morganson.me") jason@morganson.me
 
     // IM
     #IM
@@ -93,36 +93,36 @@ priority: 1.0
     // Home phone
     #phone.p-tel.tel
         .type Home
-        a.value(title="Home", property="telephone", itemprop="telephone", href="tel:+18888916774") 1.888.891.6774
+        a.value(title="Home", property="telephone", itemprop="telephone", itemscope="", href="tel:+18888916774") 1.888.891.6774
 
     // Cellphone
     #cell.p-tel.tel
         .type Cell
-        a.value(title="Cell", property="telephone", itemprop="telephone", href="tel:+15183024299") 1-518-302-4299
+        a.value(title="Cell", property="telephone", itemprop="telephone", itemscope="", href="tel:+15183024299") 1-518-302-4299
 
     // SMS
     #sms.p-tel.tel
         .type Cell
-        a.value.u-url.url(title="SMS", property="telephone", itemprop="telephone", href="sms:15183024299") SMS
+        a.value.u-url.url(title="SMS", property="telephone", itemprop="telephone", itemscope="", href="sms:15183024299") SMS
 
     // Fax
     #fax.p-tel.tel
         .type Fax
-        .value(property="faxNumber", itemprop="faxNumber") 1-518-310-2272
+        .value(property="faxNumber", itemprop="faxNumber", itemscope="") 1-518-310-2272
 
     // Address
     #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
-        .p-street-address.street-address(property="streetAddress", itemprop="streetAddress") 16 Stage Coach Way
-        .p-locality.locality(property="addressLocality", itemprop="addressLocality") Lake Placid
-        .p-region.region(property="addressRegion", itemprop="addressRegion") New York
-        .p-postal-code.postal-code(property="postalCode", itemprop="postalCode") 12946
-        .p-country-name.country-name(property="addressCountry", itemprop="addressCountry") US
+        .p-street-address.street-address(property="streetAddress", itemprop="streetAddress", itemscope="") 16 Stage Coach Way
+        .p-locality.locality(property="addressLocality", itemprop="addressLocality", itemscope="") Lake Placid
+        .p-region.region(property="addressRegion", itemprop="addressRegion", itemscope="") New York
+        .p-postal-code.postal-code(property="postalCode", itemprop="postalCode", itemscope="") 12946
+        .p-country-name.country-name(property="addressCountry", itemprop="addressCountry", itemscope="") US
         a.h-geo.p-geo.geo(title="Geo", href="geo:44.2679,-73.9897")
             abbr.p-latitude.latitude(title="44.26790") N 44° 26.790
             abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
 
     // Jobs
-    .role(property="jobTitle og:title foaf:title", itemprop="jobTitle") Software Engineer
+    .role(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer
 
     // Companies
     .org(property="memberOf owns worksFor foaf:Organization") 14 Productions
