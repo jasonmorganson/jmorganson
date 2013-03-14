@@ -5,22 +5,24 @@ priority: 1.0
 
 
 
-span(about="http://jason.morganson.me/profile#",
-     rdf:about="http://jason.morganson.me/profile#",
-     property="foaf:PersonalProfileDocument",
-     typeof="foaf:PersonalProfileDocument"
+.PersonalProfileDocument(
+    typeof="PersonalProfileDocument foaf:PersonalProfileDocument",
+    property="PersonalProfileDocument foaf:PersonalProfileDocument",
+    about="http://jason.morganson.me/profile#",
+    rdf:about="http://jason.morganson.me/profile#"
     )
 
-    span(property="maker", rdf:resource="http://jason.morganson.me")
-    span(property="primaryTopic", rdf:resource="http://jason.morganson.me")
+    span(property="maker foaf:maker", rdf:resource="http://jason.morganson.me")
+    span(property="primaryTopic foaf:primaryTopic", rdf:resource="http://jason.morganson.me")
 
-.vcard.h-card(profile="http://microformats.org/wiki/hcard",
-              about="http://jason.morganson.me",
-              rdf:about="http://jason.morganson.me",
-              typeof="Person foaf:Person",
-              itemtype="http://schema.org/Person",
-              itemscope=""
-             )
+.Person.vcard.h-card(
+    typeof="Person foaf:Person",
+    property="Person foaf:Person",
+    about="http://jason.morganson.me",
+    rdf:about="http://jason.morganson.me",
+    itemtype="http://schema.org/Person",
+    profile="http://microformats.org/wiki/hcard"
+    )
 
     // Certificate
     span.cert(property="cert:key")
