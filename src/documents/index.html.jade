@@ -31,13 +31,13 @@ priority: 1.0
             span(property="cert:exponent", itemprop="cert:exponent", itemscope="", datatype="xsd:int", rdf:datatype="xsd:int") 65537
 
     // Web Page
-    #webpage.u-url.url(itemprop="url", itemscope="", property="url og:url og:website foaf:homepage", rdf:resource="http://jason.morganson.me")
+    #webpage.u-url.url(property="url og:url og:website foaf:homepage", itemprop="url", itemscope="", rdf:resource="http://jason.morganson.me")
 
     // Name
-    #name.p-fn.fn.p-name(itemprop="name", itemscope="", property="name foaf:name", prefix="http://ogp.me/ns/profile#")
-        span#givenName.p-given-name.given-name(itemprop="givenName", itemscope="", property="profile:first_name foaf:firstName") Jason
+    #name.p-fn.fn.p-name(itemprop="name", itemscope="", property="name foaf:name")
+        span#givenName.p-given-name.given-name(itemprop="givenName", itemscope="", property="og:first_name foaf:firstName") Jason
         span 
-        span#familyName.p-family-name.family-name(itemprop="familyName", itemscope="", property="profile:last_name foaf:surname") Morganson
+        span#familyName.p-family-name.family-name(itemprop="familyName", itemscope="", property="og:last_name foaf:surname") Morganson
 
     // E-mail
     a#email.u-email.email(title="E-Mail", property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", itemscope="", href="mailto:jason@morganson.me") jason@morganson.me
