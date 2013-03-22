@@ -34,10 +34,10 @@ priority: 1.0
     #webpage.u-url.url(property="url og:url og:website foaf:homepage", itemprop="url", itemscope="", rdf:resource="http://jason.morganson.me")
 
     // Name
-    #name.p-fn.fn.p-name(property="name foaf:name", itemprop="name", itemscope="")
-        span#givenName.p-given-name.given-name(property="og:first_name foaf:firstName", itemprop="givenName", itemscope="") Jason
-        span 
-        span#familyName.p-family-name.family-name(property="og:last_name foaf:surname", itemprop="familyName", itemscope="") Morganson
+    #name.p-fn.fn.p-name.name(property="name foaf:name", itemprop="name", itemscope="")
+        span#givenName.p-given-name.given-name.name(property="og:first_name foaf:firstName", itemprop="givenName", itemscope="") Jason
+        span.name 
+        span#familyName.p-family-name.family-name.name(property="og:last_name foaf:surname", itemprop="familyName", itemscope="") Morganson
 
     // E-mail
     a#email.u-email.email(title="E-Mail", property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", itemscope="", href="mailto:jason@morganson.me") jason@morganson.me
