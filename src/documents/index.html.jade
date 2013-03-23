@@ -123,16 +123,16 @@ priority: 1.0
         .p-locality.locality(property="addressLocality", itemprop="addressLocality", itemscope="") Lake Placid
         .p-region.region(property="addressRegion", itemprop="addressRegion", itemscope="") New York
         .p-postal-code.postal-code(property="postalCode", itemprop="postalCode", itemscope="") 12946
-        .p-country-name.country-name(property="addressCountry", itemprop="addressCountry", itemscope="") US
-        a.h-geo.p-geo.geo(title="Geo", href="geo:44.2679,-73.9897")
+        .p-country-name.country-name.hidden-text(property="addressCountry", itemprop="addressCountry", itemscope="") US
+        a.h-geo.p-geo.geo.hidden-text(title="Geo", href="geo:44.2679,-73.9897")
             abbr.p-latitude.latitude(title="44.26790") N 44° 26.790
             abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
 
     // Jobs
-    .role(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer
+    .role.hidden-text(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer
 
     // Companies
-    .org(property="memberOf owns worksFor foaf:Organization") 14 Productions
+    .org.hidden-text(property="memberOf owns worksFor foaf:Organization") 14 Productions
 
 //.footer
     a(title="hCard", href="http://microformats.org/wiki/hcard") hCard embedded
