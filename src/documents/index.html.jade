@@ -46,6 +46,26 @@ priority: 1.0
     #email.u-email.email(property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", itemscope="")
         a.email(title="E-Mail", href="mailto:jason@morganson.me") jason@morganson.me
 
+    // Home phone
+    #phone.p-tel.tel
+        .type Home
+        a.value(title="Home", property="telephone", itemprop="telephone", itemscope="", href="tel:+18888916774") 1.888.891.6774
+
+    // Cellphone
+    #cell.p-tel.tel
+        .type Cell
+        a.value(title="Cell", property="telephone", itemprop="telephone", itemscope="", href="tel:+15183024299") 1-518-302-4299
+
+    // SMS
+    #sms.p-tel.tel
+        .type Cell
+        a.value.u-url.url(title="SMS", property="telephone", itemprop="telephone", itemscope="", href="sms:15183024299") SMS
+
+    // Fax
+    #fax.p-tel.tel
+        .type Fax
+        .value(property="faxNumber", itemprop="faxNumber", itemscope="") 1-518-310-2272
+
     // IM
     #IM
 
@@ -93,26 +113,6 @@ priority: 1.0
 
         // Geoloqi
         a#Geoloqi(title="Geoloqi", href="http://geoloqi.com/jmorganson", rel="me") Geoloqi
-
-    // Home phone
-    #phone.p-tel.tel
-        .type Home
-        a.value(title="Home", property="telephone", itemprop="telephone", itemscope="", href="tel:+18888916774") 1.888.891.6774
-
-    // Cellphone
-    #cell.p-tel.tel
-        .type Cell
-        a.value(title="Cell", property="telephone", itemprop="telephone", itemscope="", href="tel:+15183024299") 1-518-302-4299
-
-    // SMS
-    #sms.p-tel.tel
-        .type Cell
-        a.value.u-url.url(title="SMS", property="telephone", itemprop="telephone", itemscope="", href="sms:15183024299") SMS
-
-    // Fax
-    #fax.p-tel.tel
-        .type Fax
-        .value(property="faxNumber", itemprop="faxNumber", itemscope="") 1-518-310-2272
 
     // Address
     #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
