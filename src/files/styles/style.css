@@ -1,8 +1,6 @@
 
 /*** Styles ***/
 
-/* apply a natural box layout model to all elements */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
 /** Body **/
@@ -53,13 +51,16 @@ body {
     display: none;
 }
 
-.cert {
-    display: none;
-}
+/* Misc */
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .wf-loading {
 /*display:none;*/
 }
+
+/* Defaults */
 
 a {
     color: black;
@@ -116,10 +117,25 @@ overflow: hidden;
 }
 
 .u-impp,
-.tel {
+.tel,
+#Social a,
+#address {
     font-family: 'Special Elite', cursive, serif;
 }
 
+#Social {
+    text-align: center;
+}
+
+#Social a {
+    margin: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+#address {
+    margin-top: 10px;
+}
 
 #name, .tel {
     white-space: nowrap;
