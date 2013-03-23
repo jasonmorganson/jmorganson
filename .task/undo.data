@@ -380,3 +380,7 @@ time 1363127725
 old [description:"Add WebID" entry:"1363127672" priority:"M" status:"pending" uuid:"474e8fbf-f782-437d-9fe6-9e7a252a0e17"]
 new [description:"Add WebID" entry:"1363127672" priority:"M" project:"Website" status:"pending" uuid:"474e8fbf-f782-437d-9fe6-9e7a252a0e17"]
 ---
+time 1364052693
+old [depends:"e8d09370-7cc4-4656-b903-8c8519568a22,f3abfcff-defb-46b6-b095-aca6f036ef62" description:"Fine tune styling" entry:"1357345597" priority:"M" project:"Website" status:"pending" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+new [depends:"e8d09370-7cc4-4656-b903-8c8519568a22,f3abfcff-defb-46b6-b095-aca6f036ef62" description:"Fine tune styling" end:"1364052693" entry:"1357345597" priority:"M" project:"Website" status:"completed" uuid:"d85fcac2-6c66-41ee-9c46-3b3cde7989a4"]
+---
