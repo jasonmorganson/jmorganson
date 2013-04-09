@@ -92,7 +92,8 @@ overflow: hidden;
     font-family: 'NeoRetroDrawRegular', sans-serif;
 }
 
-.name::selection {
+.name::selection,
+.name::-moz-selection {
     
     font-family: 'NeoRetroShadowRegular', sans-serif;
     color: red;
@@ -112,7 +113,8 @@ overflow: hidden;
     color: blue;
 }
 
-#email::selection {
+#email::selection,
+#email::-moz-selection {
     color: blue;
 }
 
@@ -339,6 +341,28 @@ overflow: hidden;
 
 #resume #cover p {
     font-size: 14pt;
+}
+
+
+#cover h1,
+#cover h2,
+#cover h3,
+#cover h4 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#cover p {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 1.25em 0;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+#cover p + p {
+    text-indent: 1.5em;
+    margin-top: 0;
 }
 
 .stretch {
