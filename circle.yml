@@ -1,4 +1,5 @@
 deployment:
     production:
         branch: docpad
-        commands: jitsu deploy
+        commands:
+            - jitsu deploy
