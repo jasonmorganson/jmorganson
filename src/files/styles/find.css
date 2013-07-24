@@ -1,0 +1,43 @@
+
+.find body {
+
+    font-family:'Source Code Pro', Courier, sans-serif;
+    color: #CCCCCC;
+    background: #000000;
+}
+
+.find div {
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#jasonmorganson-dot h1 {
+
+    display: inline;
+}
+
+#jasonmorganson-dot p {
+
+    display: inline;
+}
+
+#slash-jasonmorganson {
+
+    text-align: right;
+}
+
+#slash-jasonmorganson h1 {
+
+    display: inline;
+}
+
+#slash-jasonmorganson p {
+
+    display: inline;
+}
+
+
+
+
+

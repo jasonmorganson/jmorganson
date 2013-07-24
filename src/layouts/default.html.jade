@@ -1,12 +1,18 @@
 !!! 5
 
-include head
+html(lang="en",
+     class=document.slug,
+     version="HTML+RDFa 1.1",
+     prefix="dc:http://purl.org/dc/terms/ md: http://www.w3.org/ns/md# og: http://ogp.me/ns# foaf: http://xmlns.com/foaf/0.1/ rdfa: http://www.w3.org/ns/rdfa# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema# cert: http://www.w3.org/ns/auth/cert#"
+    )
 
-body
+    include head/head
 
-    header
-    #content!= content
-    footer
+    body(vocab="http://schema.org/")
 
-    include scripts
+        header
+        #content!= content
+        footer
+
+        include scripts/scripts
 

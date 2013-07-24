@@ -1,0 +1,34 @@
+
+// Standard Meta
+meta(charset="utf-8")
+
+// Internet Explorer specific
+meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+// iOS specific
+meta(name="viewport", content="width=device-width")
+meta(name="format-detection", content="telephone=no")
+
+// Site Properities
+meta(name="description", content="#{getPreparedDescription()}")
+meta(name="keywords", content="#{getPreparedKeywords()}")
+
+// Site Verification
+meta(name="msvalidate.01", content="D65530012B23532262D9D168CC09C325")
+meta(name="google-site-verification", content="42eicWH4YrGDxtmELgWjTtzPbhkw9O6SPsMX4j0cL20")
+meta(name="google-site-verification", content="NMuJAY0vXU3QzxA4a6uyaMdXjJQZ4qjKHJZWOLiiTjk")
+meta(name="bitly-verification", content="801f53a49370")
+
+// Open Graph
+meta(property="og:type", content="profile")
+meta(property="og:first_name", content="Jason")
+meta(property="og:last_name", content="Morganson")
+meta(property="og:site_name", content="Jason Morganson")
+meta(property="og:title", content="Jason Morganson")
+meta(property="og:description", content="Jason Morganson")
+meta(property="og:url", content="http://jason.morganson.me")
+
+// DocPad Meta
+!= getBlock('meta').toHTML()
+
+

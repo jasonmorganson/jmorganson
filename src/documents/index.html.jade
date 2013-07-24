@@ -1,0 +1,150 @@
+---
+layout: 'default'
+priority: 1.0
+---
+
+
+
+.PersonalProfileDocument(
+    typeof="PersonalProfileDocument foaf:PersonalProfileDocument",
+    property="PersonalProfileDocument foaf:PersonalProfileDocument",
+    about="http://jason.morganson.me/profile#",
+    rdf:about="http://jason.morganson.me/profile#"
+    )
+
+    span(property="maker foaf:maker", resource="http://jason.morganson.me", rdf:resource="http://jason.morganson.me")
+        .hidden-text Jason Morganson
+    span(property="primaryTopic foaf:primaryTopic", resource="http://jason.morganson.me", rdf:resource="http://jason.morganson.me")
+        .hidden-text Jason Morganson
+
+.Person.vcard.h-card(
+    typeof="Person foaf:Person",
+    property="Person foaf:Person",
+    about="http://jason.morganson.me",
+    rdf:about="http://jason.morganson.me",
+    itemtype="http://schema.org/Person", itemscope="",
+    profile="http://microformats.org/wiki/hcard"
+    )
+
+    // Certificate
+    span.cert.hidden-text(rel="cert:key", property="cert:key", itemprop="cert:key", itemscope="")
+        span(typeof="cert:RSAPublicKey", property="cert:RSAPublicKey", itemprop="cert:key", itemscope="", itemtype="cert:RSAPublicKey")
+            span(property="cert:modulus", itemprop="cert:modulus", itemscope="", datatype="xsd:hexBinary", rdf:datatype="xsd:hexBinary") 8C8B05E6AF8C175FC0AFE56AD7BF763E819FD92881AE22283698A5890B49D95EB91F13CAA1159EA568839534F949A8EF477B9A8E4ECF0067F1B7FCD0F2061F5B3FCE73BB309DD127A019C39B9586B5D19BDCF0293314ACFA5DF514CD010593F1A5C18CE3E9B761DD8FB2F7E02DCACF1A6CC36CE61EBFEC4474E06E954D2A5F031C3BE0A230257710146AA841D85FE4095471FF9C801BEA740970F39D88CCABFED34982EA747134FB0E601C5AF87BD5E5BD4B9FD70569B28698C83B496555D78B2BBE2F752CA4E21173EF823F2DD1530A483A873AF26903475F6C466178F06ADB3874379B5E02316AFEBB890A463856244D282AF7AC999C357BA6DC9EE8027961
+            span(property="cert:exponent", itemprop="cert:exponent", itemscope="", datatype="xsd:int", rdf:datatype="xsd:int") 65537
+
+    // Web Page
+    #webpage.u-url.url(property="url og:url og:website foaf:homepage", itemprop="url", itemscope="", rdf:resource="http://jason.morganson.me")
+        .hidden-text jason.morganson.me
+
+    // Name
+    #name.p-fn.fn.p-name.name(property="name foaf:name", itemprop="name", itemscope="")
+        span#givenName.p-given-name.given-name.name(property="og:first_name foaf:firstName", itemprop="givenName", itemscope="") Jason
+        span.name 
+        span#familyName.p-family-name.family-name.name(property="og:last_name foaf:surname", itemprop="familyName", itemscope="") Morganson
+
+    // E-mail
+    #email.u-email.email(property="email foaf:openid foaf:mbox rdf:resource", itemprop="email", itemscope="")
+        a.email(title="E-Mail", href="mailto:jason@morganson.me") jason@morganson.me
+
+    // Home phone
+    #phone.p-tel.tel
+        .type: .hidden-text Home
+        a.value(title="Home", property="telephone", itemprop="telephone", itemscope="", href="tel:+18888916774"): .hidden-text 1.888.891.6774
+
+    // StarStar
+    #starstar.p-tel.tel
+        .type: .hidden-text StarStar
+        a.value(title="StarStar", property="telephone", itemprop="telephone", itemscope="", href="tel:**667426766") **MORGANSON
+
+    // Cellphone
+    #cell.p-tel.tel
+        .type: .hidden-text Cell
+        a.value(title="Cell", property="telephone", itemprop="telephone", itemscope="", href="tel:+15183024299") 1-518-302-4299
+
+    // SMS
+    #sms.p-tel.tel
+        .type: .hidden-text SMS
+        a.value.u-url.url(title="SMS", property="telephone", itemprop="telephone", itemscope="", href="sms:15183024299"): .hidden-text SMS
+
+    // Fax
+    #fax.p-tel.tel
+        .type: .hidden-text Fax
+        .value(property="faxNumber", itemprop="faxNumber", itemscope=""): .hidden-text 1-518-310-2272
+
+    // IM
+    #IM
+
+        span#G1.group
+
+            //iMessage
+            span.IM: a#iMessage.u-url.url.u-impp(title="iMessage", href="imessage:jason@morganson.me") iMessage
+
+            //Facetime
+            span.IM: a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime:jason@morganson.me") FaceTime
+
+        span#G2.group
+
+            //SIP
+            span.IM: a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
+
+            //SIMPLE
+            span.IM: a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
+
+            //XMPP
+            span.IM: a#XMPP.u-url.url.u-impp(title="XMPP", property="foaf:jabberID", href="xmpp:jason@morganson.me") XMPP
+
+        span#G3.group
+
+            //GTalk
+            span.IM: a#GTalk.u-url.url.u-impp(title="GTalk", property="foaf:jabberID", href="gtalk:chat?jid=jason@morganson.me") GTalk
+
+            //MSN
+            span.IM: a#MSN.u-url.url.u-impp(title="MSN", property="foaf:msnChatID", href="msnim:chat?contact=jason@morganson.me"): .hidden-text MSN
+
+            //AIM
+            span.IM: a#AIM.u-url.url.u-impp(title="AIM", property="foaf:aimChatID", href="aim:goim?screenname=jason@morganson.me") AIM
+
+            //YIM
+            span.IM: a#YIM.u-url.url.u-impp(title="YIM", property="foaf:yahooChatID", href="ymsgr:sendIM?jasonmorganson") YIM
+
+            //Skype
+            span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
+
+    // Social
+    #Social
+
+        // LinkedIn
+        a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
+
+        // Google Plus
+        a#GooglePlus.u-url.url(title="Google+", href="http://plus.google.com/115799597282883490421?rel=author", rel="me") Google+
+
+        // Twitter
+        a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
+
+        // GitHub
+        a#GitHub(title="GitHub", href="https://github.com/jmorganson", rel="me") Github
+
+    // Address
+    #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
+        .p-street-address.street-address(property="streetAddress", itemprop="streetAddress", itemscope="") 16 Stage Coach Way
+        .p-locality.locality(property="addressLocality", itemprop="addressLocality", itemscope="") Lake Placid
+        .p-region.region(property="addressRegion", itemprop="addressRegion", itemscope="") New York
+        .p-postal-code.postal-code(property="postalCode", itemprop="postalCode", itemscope="") 12946
+        .p-country-name.country-name.hidden-text(property="addressCountry", itemprop="addressCountry", itemscope="") US
+        a.h-geo.p-geo.geo.hidden-text(title="Geo", href="geo:44.2679,-73.9897")
+            abbr.p-latitude.latitude(title="44.26790") N 44° 26.790
+            abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
+
+    // Jobs
+    .role.hidden-text(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer
+
+    // Companies
+    .org.hidden-text(property="memberOf owns worksFor foaf:Organization") 14 Productions
+
+//.footer
+    a(title="hCard", href="http://microformats.org/wiki/hcard") hCard embedded
+    a(rel="profile", href="http://microformats.org/profile/hcard") hCard
+    a(title="vCard", type="text/directory", href="http://h2vx.com/vcf/jason.morganson.me") Download vCard
+    a(title="Portable Contact (JSON)", type="text/javascript", href="http://www.plaxo.com/pdata/vcard?vcardUrl=http%3A%2F%2Fh2vx.com%2Fvcf%2Fjason.morganson.me&format=json&plaintext=1&pretty=1") Portable Contact (JSON)
+    a(title="Portable Contact (XML)", type="text/xml", href="http://www.plaxo.com/pdata/vcard?vcardUrl=http%3A%2F%2Fh2vx.com%2Fvcf%2Fjason.morganson.me&format=json&plaintext=1&pretty=1") Portable Contact (XML)
