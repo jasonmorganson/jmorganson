@@ -39,7 +39,7 @@ priority: 1.0
     // Name
     #name.p-fn.fn.p-name.name(property="name foaf:name", itemprop="name", itemscope="")
         span#givenName.p-given-name.given-name.name(property="og:first_name foaf:firstName", itemprop="givenName", itemscope="") Jason
-        span.name 
+        span.name
         span#familyName.p-family-name.family-name.name(property="og:last_name foaf:surname", itemprop="familyName", itemscope="") Morganson
 
     // E-mail
@@ -70,6 +70,21 @@ priority: 1.0
     #fax.p-tel.tel
         .type: .hidden-text Fax
         .value(property="faxNumber", itemprop="faxNumber", itemscope=""): .hidden-text 1-518-310-2272
+
+    // Social
+    #Social
+
+        // LinkedIn
+        a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
+
+        // Google Plus
+        a#GooglePlus.u-url.url(title="Google+", href="http://plus.google.com/115799597282883490421?rel=author", rel="me") Google+
+
+        // Twitter
+        a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
+
+        // GitHub
+        a#GitHub(title="GitHub", href="https://github.com/jmorganson", rel="me") Github
 
     // IM
     #IM
@@ -109,21 +124,6 @@ priority: 1.0
 
             //Skype
             span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
-
-    // Social
-    #Social
-
-        // LinkedIn
-        a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
-
-        // Google Plus
-        a#GooglePlus.u-url.url(title="Google+", href="http://plus.google.com/115799597282883490421?rel=author", rel="me") Google+
-
-        // Twitter
-        a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
-
-        // GitHub
-        a#GitHub(title="GitHub", href="https://github.com/jmorganson", rel="me") Github
 
     // Address
     #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
