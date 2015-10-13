@@ -17,8 +17,8 @@
     "url": "http://github.com/jmorganson/jmorganson.git"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "4.2.0",
+    "npm": "3.3.6"
   },
   "dependencies": {
     "docpad": "~6.78.3",
