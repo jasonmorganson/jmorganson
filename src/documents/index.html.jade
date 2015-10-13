@@ -71,59 +71,62 @@ priority: 1.0
         .type: .hidden-text Fax
         .value(property="faxNumber", itemprop="faxNumber", itemscope=""): .hidden-text 1-518-310-2272
 
-    // Social
-    #Social
+    // Links
+    #Links
 
-        // LinkedIn
-        a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
+        // Social
+        span#Social
 
-        // Google Plus
-        a#GooglePlus.u-url.url(title="Google+", href="https://plus.google.com/u/1/+JasonMorganson", rel="me") Google+
+            // LinkedIn
+            a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
 
-        // Twitter
-        a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
+            // Google Plus
+            a#GooglePlus.u-url.url(title="Google+", href="https://plus.google.com/u/1/+JasonMorganson", rel="me") Google+
 
-        // GitHub
-        a#GitHub(title="GitHub", href="https://github.com/jasonmorganson", rel="me") Github
+            // Twitter
+            a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
 
-    // IM
-    #IM
+            // GitHub
+            a#GitHub(title="GitHub", href="https://github.com/jasonmorganson", rel="me") Github
 
-        span#G1.group
+        // IM
+        #IM.hidden-text
 
-            //iMessage
-            span.IM: a#iMessage.u-url.url.u-impp(title="iMessage", href="imessage:jason@morganson.me") iMessage
+            span#G1.group
 
-            //Facetime
-            span.IM: a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime:jason@morganson.me") FaceTime
+                //iMessage
+                span.IM: a#iMessage.u-url.url.u-impp(title="iMessage", href="imessage:jason@morganson.me") iMessage
 
-        span#G2.group
+                //Facetime
+                span.IM: a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime:jason@morganson.me") FaceTime
 
-            //SIP
-            span.IM: a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
+            span#G2.group
 
-            //SIMPLE
-            span.IM: a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
+                //SIP
+                span.IM: a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
 
-            //XMPP
-            span.IM: a#XMPP.u-url.url.u-impp(title="XMPP", property="foaf:jabberID", href="xmpp:jason@morganson.me") XMPP
+                //SIMPLE
+                span.IM: a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
 
-        span#G3.group
+                //XMPP
+                span.IM: a#XMPP.u-url.url.u-impp(title="XMPP", property="foaf:jabberID", href="xmpp:jason@morganson.me") XMPP
 
-            //GTalk
-            span.IM: a#GTalk.u-url.url.u-impp(title="GTalk", property="foaf:jabberID", href="gtalk:chat?jid=jason@morganson.me") GTalk
+            span#G3.group
 
-            //MSN
-            span.IM: a#MSN.u-url.url.u-impp(title="MSN", property="foaf:msnChatID", href="msnim:chat?contact=jason@morganson.me"): .hidden-text MSN
+                //GTalk
+                span.IM: a#GTalk.u-url.url.u-impp(title="GTalk", property="foaf:jabberID", href="gtalk:chat?jid=jason@morganson.me") GTalk
 
-            //AIM
-            span.IM: a#AIM.u-url.url.u-impp(title="AIM", property="foaf:aimChatID", href="aim:goim?screenname=jason@morganson.me") AIM
+                //MSN
+                span.IM: a#MSN.u-url.url.u-impp(title="MSN", property="foaf:msnChatID", href="msnim:chat?contact=jason@morganson.me"): .hidden-text MSN
 
-            //YIM
-            span.IM: a#YIM.u-url.url.u-impp(title="YIM", property="foaf:yahooChatID", href="ymsgr:sendIM?jasonmorganson") YIM
+                //AIM
+                span.IM: a#AIM.u-url.url.u-impp(title="AIM", property="foaf:aimChatID", href="aim:goim?screenname=jason@morganson.me") AIM
 
-            //Skype
-            span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
+                //YIM
+                span.IM: a#YIM.u-url.url.u-impp(title="YIM", property="foaf:yahooChatID", href="ymsgr:sendIM?jasonmorganson") YIM
+
+                //Skype
+                span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
 
     // Jobs
     .role.hidden-text(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer
