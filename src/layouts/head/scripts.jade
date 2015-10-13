@@ -1,7 +1,7 @@
+include webfont
 
-!= getBlock('scripts').toHTML()
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 
-script(src="build.js")
 script.
 
     // Switch iMessage URI depending on the platform
@@ -9,10 +9,11 @@ script.
     var iMessage = iOS ? "sms:" : "imessage://";
     $("#iMessage").attr("href", iMessage + "jason@morganson.me");
 
-    var $ = require('component-jquery');
-    var domready = require('jb55-domready')
-    domready(function () {
+    // Prevent touch moves
+    $(function () {
 
         $(document).bind('touchmove', false);
     })
+
+!= getBlock('scripts').add(['/vendor/bigtext.js']).toHTML()
 
