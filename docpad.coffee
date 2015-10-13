@@ -107,12 +107,6 @@ docpadConfig = {
                 site:
                     services:
                         googleAnalytics: false
-
-            events:
-                populateCollections: ->
-                    @docpad.getBlock('styles').add(['/vendor/holmes.css','/vendor/diagnostic.css'])
-                    @docpad.getBlock('scripts').add(['/vendor/helium.js'])
-
 }
 
 
