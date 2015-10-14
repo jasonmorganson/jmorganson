@@ -2,9 +2,6 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
-    # Change the port DocPad uses from the default 9778 to 8080
-    port: 80
-
     # =================================
     # Template Data
     # These are variables that will be accessible via our templates
