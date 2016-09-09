@@ -1,6 +1,7 @@
 {
   "name": "jmorganson",
-  "version": "0.0.1-4",
+  "private": true,
+  "version": "0.0.2",
   "description": "Jason Morganson",
   "keywords": [
     "Jason",
@@ -17,27 +18,21 @@
     "url": "http://github.com/jmorganson/jmorganson.git"
   },
   "engines": {
-    "node": "4.2.0",
+    "node": "6.5.0",
     "npm": "3.3.6"
   },
   "dependencies": {
-    "docpad": "~6.78.3",
-    "docpad-plugin-cleanurls": "~2.8.1",
-    "docpad-plugin-coffeescript": "~2.5.0",
-    "docpad-plugin-ghpages": "~2.4.4",
-    "docpad-plugin-jade": "~2.9.0",
-    "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-partials": "~2.9.2",
-    "docpad-plugin-services": "~2.6.0",
-    "docpad-plugin-sitemap": "~2.2.0",
-    "docpad-plugin-stylus": "~2.9.0",
-    "docpad-plugin-text": "~2.3.3"
+    "jstransformer-markdown-it": "^1.0.0",
+    "jstransformer-pug": "^0.2.1",
+    "koa": "^2.0.0",
+    "koa-static": "^3.0.0",
+    "metalsmith": "^2.2.0",
+    "metalsmith-jstransformer": "^0.7.1"
   },
-  "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.1"
-  },
-  "main": "node_modules/docpad/bin/docpad-server",
+  "devDependencies": {},
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "build": "metalsmith",
+    "prestart": "npm run build",
+    "start": "node server"
   }
 }
