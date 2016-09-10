@@ -5,5 +5,5 @@ const server = new Koa()
 server.use(serve('./build'))
 server.use(serve('./files'))
 
-server.listen(3000)
+server.listen(80)
 
