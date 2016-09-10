@@ -1,6 +1,5 @@
 ---
-layout: 'default'
-priority: 1.0
+layout: layouts/default.pug
 ---
 
 
@@ -39,7 +38,7 @@ priority: 1.0
     // Name
     #name.p-fn.fn.p-name.name(property="name foaf:name", itemprop="name", itemscope="")
         span#givenName.p-given-name.given-name.name(property="og:first_name foaf:firstName", itemprop="givenName", itemscope="") Jason
-        span.name 
+        | &nbsp;
         span#familyName.p-family-name.family-name.name(property="og:last_name foaf:surname", itemprop="familyName", itemscope="") Morganson
 
     // E-mail
@@ -54,7 +53,7 @@ priority: 1.0
     // StarStar
     #starstar.p-tel.tel
         .type: .hidden-text StarStar
-        a.value(title="StarStar", property="telephone", itemprop="telephone", itemscope="", href="tel:**667426766") **MORGANSON
+        a.value(title="StarStar", property="telephone", itemprop="telephone", itemscope="", href="tel:**667426766"): .hidden-text **MORGANSON
 
     // Cellphone
     #cell.p-tel.tel
@@ -71,70 +70,62 @@ priority: 1.0
         .type: .hidden-text Fax
         .value(property="faxNumber", itemprop="faxNumber", itemscope=""): .hidden-text 1-518-310-2272
 
-    // IM
-    #IM
+    // Links
+    #Links
 
-        span#G1.group
+        // Social
+        span#Social
 
-            //iMessage
-            span.IM: a#iMessage.u-url.url.u-impp(title="iMessage", href="imessage:jason@morganson.me") iMessage
+            // LinkedIn
+            a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
 
-            //Facetime
-            span.IM: a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime:jason@morganson.me") FaceTime
+            // Google Plus
+            a#GooglePlus.u-url.url(title="Google+", href="https://plus.google.com/u/1/+JasonMorganson", rel="me") Google+
 
-        span#G2.group
+            // Twitter
+            a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
 
-            //SIP
-            span.IM: a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
+            // GitHub
+            a#GitHub(title="GitHub", href="https://github.com/jasonmorganson", rel="me") Github
 
-            //SIMPLE
-            span.IM: a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
+        // IM
+        #IM.hidden-text
 
-            //XMPP
-            span.IM: a#XMPP.u-url.url.u-impp(title="XMPP", property="foaf:jabberID", href="xmpp:jason@morganson.me") XMPP
+            span#G1.group
 
-        span#G3.group
+                //iMessage
+                span.IM: a#iMessage.u-url.url.u-impp(title="iMessage", href="imessage:jason@morganson.me") iMessage
 
-            //GTalk
-            span.IM: a#GTalk.u-url.url.u-impp(title="GTalk", property="foaf:jabberID", href="gtalk:chat?jid=jason@morganson.me") GTalk
+                //Facetime
+                span.IM: a#FaceTime.u-url.url.u-impp(title="FaceTime", href="facetime:jason@morganson.me") FaceTime
 
-            //MSN
-            span.IM: a#MSN.u-url.url.u-impp(title="MSN", property="foaf:msnChatID", href="msnim:chat?contact=jason@morganson.me"): .hidden-text MSN
+            span#G2.group
 
-            //AIM
-            span.IM: a#AIM.u-url.url.u-impp(title="AIM", property="foaf:aimChatID", href="aim:goim?screenname=jason@morganson.me") AIM
+                //SIP
+                span.IM: a#SIP.u-url.url.u-impp(title="SIP", href="sip:jason@morganson.me") SIP
 
-            //YIM
-            span.IM: a#YIM.u-url.url.u-impp(title="YIM", property="foaf:yahooChatID", href="ymsgr:sendIM?jasonmorganson") YIM
+                //SIMPLE
+                span.IM: a#SIMPLE.u-url.url.u-impp(title="SIMPLE", href="sip:jason@morganson.me") SIMPLE
 
-            //Skype
-            span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
+                //XMPP
+                span.IM: a#XMPP.u-url.url.u-impp(title="XMPP", property="foaf:jabberID", href="xmpp:jason@morganson.me") XMPP
 
-    // Social
-    #Social
+            span#G3.group
 
-        // LinkedIn
-        a#LinkedIn.u-url.url(title="LinkedIn", href="http://www.linkedin.com/in/jasonmorganson", rel="me") LinkedIn
+                //GTalk
+                span.IM: a#GTalk.u-url.url.u-impp(title="GTalk", property="foaf:jabberID", href="gtalk:chat?jid=jason@morganson.me") GTalk
 
-        // Google Plus
-        a#GooglePlus.u-url.url(title="Google+", href="http://plus.google.com/115799597282883490421?rel=author", rel="me") Google+
+                //MSN
+                span.IM: a#MSN.u-url.url.u-impp(title="MSN", property="foaf:msnChatID", href="msnim:chat?contact=jason@morganson.me"): .hidden-text MSN
 
-        // Twitter
-        a#Twitter(title="Twitter", href="http://twitter.com/jasonmorganson", rel="me") Twitter
+                //AIM
+                span.IM: a#AIM.u-url.url.u-impp(title="AIM", property="foaf:aimChatID", href="aim:goim?screenname=jason@morganson.me") AIM
 
-        // GitHub
-        a#GitHub(title="GitHub", href="https://github.com/jmorganson", rel="me") Github
+                //YIM
+                span.IM: a#YIM.u-url.url.u-impp(title="YIM", property="foaf:yahooChatID", href="ymsgr:sendIM?jasonmorganson") YIM
 
-    // Address
-    #address.h-adr.p-adr.adr(property="address", itemprop="address", itemtype="http://schema.org/PostalAddress", itemscope="")
-        .p-street-address.street-address(property="streetAddress", itemprop="streetAddress", itemscope="") 16 Stage Coach Way
-        .p-locality.locality(property="addressLocality", itemprop="addressLocality", itemscope="") Lake Placid
-        .p-region.region(property="addressRegion", itemprop="addressRegion", itemscope="") New York
-        .p-postal-code.postal-code(property="postalCode", itemprop="postalCode", itemscope="") 12946
-        .p-country-name.country-name.hidden-text(property="addressCountry", itemprop="addressCountry", itemscope="") US
-        a.h-geo.p-geo.geo.hidden-text(title="Geo", href="geo:44.2679,-73.9897")
-            abbr.p-latitude.latitude(title="44.26790") N 44° 26.790
-            abbr.p-longitude.longitude(title="-73.98970") W 73° 98.970
+                //Skype
+                span.IM: a#Skype.u-url.url.u-impp(title="Skype", property="foaf:skypeID", href="skype:jasonmorganson?call") Skype
 
     // Jobs
     .role.hidden-text(property="jobTitle og:title foaf:title", itemprop="jobTitle", itemscope="") Software Engineer

@@ -1,5 +1,2 @@
-.be/id-cache
-out/*
 build/*
 node_modules/*
-components/*
